@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Flex- Box</title>
+    <style>
+        @media screen and (max-width:650px) {
+            .Navigation{
+                flex-direction: column;
+            }
+            .content{
+                flex-direction: column;
+            }
+            .content > *{
+                flex: 1;
+            }
+            .header h1{
+                font-size: 100%;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: white;
+            font-family: sans-serif;
+            line-height: 1.5;
+        }
+        body{
+            background-color: black;
+        }
+        .header {
+            text-align: center;
+            font-family: cursive;
+            text-transform: uppercase;
+        }
+        .header h1{
+            margin: 1em 0;
+            font-size: 350%;
+        }
+        .Navigation {
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .Navigation li a {
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            padding: 1em 0;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .Navigation li {
+            flex: 1;
+        }
+
+        .Navigation li a:hover {
+            background-color: lightseagreen;
+            color: azure;
+            /* transform: scale(1.5);
+            transform: skew(5deg , 7deg); */
+            /* transform: matrix(1, 2, 3, 4, 5, 6); */
+           transform: translate(16px, 45px);
+        }
+
+        .content {
+            display: flex;
+        }
+
+        .left {
+            flex: 1.5;
+            padding: 1em;
+        }
+
+        .centre {
+            flex: 7;
+        }
+        .box{
+            width:70%;
+            margin: auto;
+        }
+        .box h2{
+            text-align: center;
+            text-transform: uppercase;
+            margin: 2em 0;
+        }
+        .box img{
+            width: 100%;
+        }
+        .right {
+            flex: 1.5;
+            padding: 1em;
+        }
+        .footer{
+            text-align: center;
+            padding: 2em 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Flowers-Gallery</h1>
+        </div>
+        <ul class="Navigation">
+            <li><a href="https://google.com">Google</a> </li>
+            <li><a href="https://twitter.com">Twitter</a></li>
+            <li><a href="https://instagram.com">Instagram</a></li>
+            <li><a href="https://linkdin.com">Linkdin</a></li>
+            <li><a href="https://github.com">Github</a></li>
+        </ul>
+        <div class="content">
+            <div class="left">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, doloribus sapientdolorem!e
+                    consequatur commodi libero odio! Ea optio tenetur maiores excepturi voluptatum quis ratione
+                    provident, tempora quia quam architecto laborum </p>
+            </div>
+            <div class="centre">
+                <div class="box">
+                    <h2>Rose</h2>
+                    <img src="https://i.pinimg.com/originals/59/0e/7c/590e7c5fae41782918ef186d106193ef.png" alt="Rose">
+                </div>
+            
+            <div class="box">
+                    <h2>Jasmine</h2>
+                    <img src="http://pngimagesfree.com/FLOWERS/Jasmine/Jasmine_flower_with_leaves.png" alt="Jasmine">
+            </div>
+            <div class="box">
+                <h2>Marigold</h2>
+                <img src="https://png.pngtree.com/png-clipart/20201221/ourlarge/pngtree-a-yellow-marigold-png-with-transparent-background-png-image_2628049.jpg" alt="Marigold">
+            </div>
+            <div class="box">
+                <h2>Orchid</h2>
+                <img src="https://www.kindpng.com/picc/m/405-4050254_orchid-png-transparent-png.png" alt="Orchid">
+            </div>
+            <div class="box">
+                <h2>Tulip</h2>
+                <img src="https://www.freepnglogos.com/uploads/tulip-png/best-tulip-clipart-clipartionm-21.png" alt="Tulip">
+            </div>
+            </div>
+            <div class="right">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolore similique reiciendis
+                    corrupti magnam omnis, magni nobis mollitia cupiditate consectetur voluptatibus voluptatum molestias
+                    quod, perferendis, impedit odit blanditiis accusamus sequi.</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy;Copyright 2022 All rights reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>

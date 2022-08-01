@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Practice 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header{
+            height: 80px;
+            
+        }
+        .logo{
+            width: 20%;
+            height: 100%;
+            float: left;
+        }
+        .logo img{
+            width: 100%;
+        }
+        .sitetitle{
+            width: 80%;
+            height: 100%;
+            float: left;
+        }
+        .sitetitle h1{
+            text-align: center;
+        }
+        .content{
+            border: 5px solid rebeccapurple;
+        }
+        .section{
+            height: 600px;
+        }
+        .right {
+            width: 50%;
+            height: 100%;
+            float: left;
+        }
+        .right{
+            width: 50%;
+            height: 100%;
+            float: right;
+        }
+        .section .right img{
+            width: 100%;
+            height: 100%;
+            
+        }
+        .section.left img{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr8gC6zvaAjXMKrvszFwDn9ZELL4YZeBGK_4WaU8alXUX0DDWIJDS3koRLHUSm1n-DMQk&usqp=CAU"
+                    alt="My logo">
+            </div>
+            <div class="sitetitle">
+                <h1>Basic html Page</h1>
+            </div>
+        </div>
+        <!-- 
+            <div class="navigation">
+            <ul>
+                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://google.com" target="_blank">Google</a></li>
+                <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                <li><a href="https://snapchat.com" target="_blank">Snapchat</a></li>
+            </ul>
+        </div>
+         -->
+
+
+        <div class="content">
+            <div class="section">
+                <div class="right"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRheLFtidR7GdMNPKXZ8OGoIf7V9UYkJZIskg&usqp=CAU"
+                        alt="My dog"></div>
+                <div class="left">
+                    <h2>My Dog</h2>
+                    <p style="text-align: centre;">"All his life he tried to be a good person. Many times, however, he
+                        failed. For after all, he was only human. He wasn't a dog."
+                    </p>
+                </div>
+            </div>
+            <div class="section">
+                <div class="right">
+                    <h2>Blockchain</h2>
+                    <p>Blockchain is a shared, immutable ledger that facilitates the process of recording transactions
+                        and tracking assets in a business network. An asset can be tangible (a house, car, cash, land)
+                        or intangible (intellectual property, patents, copyrights, branding)</p>
+                </div>
+                <div class="left"><img
+                        src="https://www.xilinx.com/content/xilinx/en/products/design-tools/resources/the-developers-guide-to-blockchain-development/_jcr_content/root/parsysFullWidth/xilinxflexibleslab/xilinxflexibleslab-parsys/xilinxcolumns_397154/childParsys-0/xilinximage_copy_cop.img.png/1644357944737.png"
+                        alt="Blockchain"></div>
+            </div>
+        </div>
+        <div class="footer">
+            <p style="text-align: center;text-transform: none; font-family: sans-serif;">&copy; Copyright 2022 All
+                rights reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>

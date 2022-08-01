@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-CSS Project</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+            font-family: sans-serif;
+            color: white;
+            text-transform: uppercase;
+        }
+        .container>*{
+            border: solid red;
+            border-radius: 10px ;
+        }
+        .container{
+            display: grid;
+            height: 100vh;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .header{
+           height: 140px;
+           grid-column: 1/4;
+           grid-row: 1; 
+           text-align: center;
+        }
+        .nav{
+            grid-column: 1/4;
+            grid-row: 2;
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 2em 0;
+        }
+        .nav li{
+            flex: 1;
+        }
+        .nav li a{
+            display: block;
+            color: hotpink;
+            text-transform: uppercase;
+            text-decoration: none;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .nav li a:hover{
+            background-color: black;
+            color: white;
+        }
+        .main{
+            grid-column: 1/3;
+            grid-row: 3;
+            
+        }
+        .ram img{
+            height: 100%;
+            width: 100%;
+            padding: 2em 0;
+        }
+        .main h2{
+            text-align: center;
+            color: orangered;
+            text-transform: uppercase;
+        }
+        .hanuman img{
+            height: 100%;
+            width: 100%; 
+        }
+        .mahadev{
+           position: fixed;
+           bottom: 40px;
+           right: 30px;
+           border-radius: 10px;
+           box-shadow: 5px 6px 20px 8px; 
+           height: 420px;
+           width: 420px;
+           transition-property: all;
+           transition-duration: 0.5s;
+           transition-delay: 1s;
+           transition-timing-function: ease-in-out;
+        }
+        .mahadev:hover{
+            width: 520px;
+            height: 520px;
+            border-radius: 20px;
+            box-shadow:5px 6px 20px 8px orangered ;
+        }
+        .mahadev img{
+            height: 100%;
+            width: 100%;
+        }
+        .aside-right{
+            height: 100vh;
+            grid-column: 3/4;
+            grid-row: 3;
+            display: flex;
+        }
+        .aside-right .side-bar{
+            flex: 2.5;
+            padding-right:1em ;            
+
+
+        }
+        .aside-right .side-bar li{
+            list-style: none;
+            border: solid rebeccapurple;
+        }
+        .aside-right .side-bar li a{
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: cursive;
+            color: coral;
+            line-height: 2.5;
+            display: block;
+            text-align: center;
+
+        }
+        .aside-right .side-bar li a:hover{
+            background-color: lightblue ;
+            color: darkblue;
+        }
+        .footer{
+            height: 140px;
+            grid-column:1/4;
+            grid-row: 4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>A webpage layout</h2>
+        </div>
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+        </ul>
+        <div class="main">
+
+            <div class="ram">
+            <h2>Jay Shree Ram</h2>
+            <img src="https://sanatanpragya.com/gallery_images/Shri_Ram_png_6.png" alt="Ram">
+            </div>
+            <div class="hanuman">
+                <h2>Jay Hanuman</h2>
+                <img src="https://freepngimg.com/thumb/hanuman/3-2-hanuman-free-png-image.png" alt="hanuman">
+            </div>
+            <div class="mahadev">
+                <img src="https://www.pngall.com/wp-content/uploads/1/Lord-Shiva-PNG-Image.png" alt="mahadev">
+            </div>
+
+        </div>
+        <div class="aside-right">
+            <ul class="side-bar">
+                <li><a href="#">Ramayana</a></li>
+                <li><a href="#">Ramayana</a></li>
+                <li><a href="#">Ramayana</a></li>
+                <li><a href="#">Ramayana</a></li>
+                <li><a href="#">Ramayana</a></li>
+                <li><a href="#">Ramayana</a></li>
+                <li><a href="#">Ramayana</a></li>
+                <li><a href="#">Ramayana</a></li>
+                <li><a href="#">Ramayana</a></li>
+                <li><a href="#">Ramayana</a></li>
+                <li><a href="#">Ramayana</a></li>
+            </ul>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: aquamarine;
+        }
+
+        .header {
+            /* border: 3px solid red; */
+            padding-top: 2px;
+            height: 80px;
+
+        }
+
+        .header h1 {
+            text-align: center;
+            text-transform:capitalize;
+            font-family: cursive;
+            color: rgb(15, 54, 80);
+        }
+
+        .navigation ul {
+            list-style: none;
+        }
+
+        .navigation ul li {
+            width: 25%;
+            float: left;
+        }
+
+        .navigation ul li a {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            padding-top: 2px;
+            text-transform: uppercase;
+            font-family: cursive;
+        }
+
+        .navigation ul li a:hover {
+            background-color: lightskyblue;
+        }
+
+        .content {
+            /* border: 3px solid greenyellow; */
+            height: 650px;
+            padding-top: 2em;
+
+        }
+
+        .left {
+            float: left;
+            width: 50%;
+            text-align: center;
+            color: indigo;
+            padding: 4em 4em;
+        }
+
+        .left img {
+            width: 100%;
+            height: 100%;
+            height: auto;
+        }
+
+        .right {
+            float: right;
+            width: 50%;
+            text-align: center;
+            color: indigo;
+            padding: 3em 3em;
+
+        }
+
+        .right img {
+            width: 100%;
+            height: auto;
+        }
+
+        .footer {
+            /* border: 3px solid red; */
+            height: 50px;
+            clear: both;
+            text-align: center;
+        }
+        @media screen and (max-width:650px){
+            .left, .right{
+                width:100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Animals Studio</h1>
+        </div>
+        <div class="navigation">
+            <ul>
+                <li><a href="https://google.com/meet" target="_blank">Google</a></li>
+                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://instagram.com/ssence________" target="_blank">Instagram</a></li>
+                <li><a href="https://twitter.com/arvindkejriwal" target="_blank">Twitter</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="left">
+                <h2>Doggie Diva</h2>
+                <p style="font-family:cursive">"Over the years I have felt the truest, purest love—the love of God,
+                    really, I imagine that's what God's love feels like—is the love that comes from your dog."</p>
+            </div>
+            <div class="right">
+                <img src="https://purepng.com/public/uploads/large/purepng.com-doganimalsdogboy-981524673170o7rle.png"
+                    alt="My dog">
+            </div>
+            <div class="left">
+                <img src="https://freepngimg.com/thumb/cat/37191-4-cat.png" alt="My cat">
+            </div>
+            <div class="right">
+                <h2>Cattitude</h2>
+                <p style="font-family: cursive;">“Cats know how to obtain food without labor, shelter without
+                    confinement, and love without penalties.”</p>
+            </div>
+            <div class="right">
+                <img src="https://pngimg.com/uploads/cow/cow_PNG50563.png" alt="Cow">
+            </div>
+            <div class="left">
+                <h2>Bos taurus</h2>
+                <p style="font-family: cursive;">
+                    "A dead cow or sheep lying in a pasture is recognized as carrion. The same sort of a carcass dressed
+                    and hung up in a butcher's stall passes as food."
+                </p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy;Copyright 2022 All rights reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>

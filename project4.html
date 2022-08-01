@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Web Page Layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color:black;
+            color:white;
+        }
+        .container *{
+            /* border: solid green;
+            border-radius: 10px; */
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .header{
+            grid-column: 1/4;
+            grid-row: 1;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: cursive;
+            height: 80px;
+        }
+        .nav{
+            grid-column: 1/4;
+            grid-row: 2;
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 2em 0;
+            height: 50px;
+        }
+        .nav li{
+            flex: 1;
+        }
+
+        .nav li a{
+            display: block;
+            color:hotpink;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .aside-left{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row: 3;
+            text-align: center;
+            height: 100vh;
+            padding: 2em 0;
+            border-right: 3px solid salmon;
+        }
+        
+        .main{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row: 3;
+            height: 100vh;
+            padding: 2em 1em;
+            display:grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .main img{
+            height: 100%;
+            width: 100%;
+        }
+        .box1{
+            height: 300px;
+            width: 300px;
+            padding: 1em;
+            grid-column: 1/2;
+            grid-row: 1;
+        }
+        .box2{
+            height: 300px;
+            width: 300px;
+            padding: 1em;
+            grid-column: 3/4;
+            grid-row: 1; 
+        }
+        .button{
+            grid-column: 2/3;
+            grid-row: 1;
+            position: fixed;
+            top: 150px;
+            right: 400px;
+        }
+        .footer{
+            grid-column: 1/4;
+            grid-row: 4;
+            grid-template-rows: repeat(3, 1fr);
+        }
+        .nav-foot{
+            grid-row: 1/4;
+            grid-column: 1;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .nav-foot li{
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>A Web Page</h2>
+        </div>
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Explorer</a></li>
+        </ul>
+        <div class="aside-left">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, mollitia. Cupiditate eius incidunt consectetur aliquam unde corrupti voluptatibus, suscipit, necessitatibus illo perferendis ipsum, quis sequi commodi id deserunt amet assumenda.</p>
+        </div>
+        <div class="main">
+       <!-- box1- apply transition -->
+            <div class="box1">  
+           <img src="https://assets.webiconspng.com/uploads/2017/09/Spider-Man-PNG-Image-22359.png" alt="Spider"> 
+        </div>
+        <!-- box-2 apply transition -->
+        <div class="box2">
+            <img src="https://i.pinimg.com/originals/34/f7/ad/34f7ad4e1dfe4a876529ea00ad92d048.png" alt="Ironman">
+        </div>
+        <div class="button">
+        <button type="button">Click Me!</button>
+        </div>
+        </div>
+        <div class="footer">
+            <ul class="nav-foot">
+                <h2>Heading</h2>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Ipsum</a></li>
+                <li><a href="#">Dolor</a></li>
+                <li><a href="#">Amet</a></li>
+                <li><a href="#">Elit</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

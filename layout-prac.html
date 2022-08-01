@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header {
+            /* border:medium solid black; */
+            height: 130px;
+        }
+
+        .navigation {
+            /* border: solid green 3px; */
+            height: 40px;
+        }
+
+        .sidebar {
+            /* border: solid blue 3px; */
+            /* height: 350px; */
+            float: right;
+            width: 15%;
+        }
+
+        .sidebar ul {
+            padding-left: 2em;
+            list-style: none;
+        }
+
+        .sidebar ul li {
+            padding-top: 8px;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: cursive;
+        }
+
+        .content {
+            /* border: 3px solid greenyellow; */
+            height: auto;
+            float: left;
+            width: 85%;
+            padding: 2em 5em;
+        }
+
+        .content p {
+            margin: 1.5em 0;
+        }
+
+        .footer {
+            height: 70px;
+            /* border: 3px solid goldenrod; */
+            clear: both;
+            text-align: center;
+        }
+
+        .logo {
+            width: 10%;
+            /* border: solid red 3px; */
+            float: right;
+            height: 100%;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .SiteTitle {
+            width: 90%;
+            /* border: dotted burlywood 3px ; */
+            float: left;
+            height: 100%;
+        }
+
+        .SiteTitle h1 {
+            text-align: center;
+            padding-top: 1em;
+            text-transform: uppercase;
+            font-family: sans-serif;
+        }
+
+        .navigation ul {
+            list-style: none;
+        }
+
+        .navigation ul li {
+            width: 20%;
+            float: left;
+            /* border: 2px solid red; */
+        }
+
+        .navigation ul li a {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            padding-top: 2px;
+            text-transform: uppercase;
+            font-family: cursive;
+        }
+
+        .navigation ul li a:hover {
+            background-color:lightgrey;
+        }
+
+        .content-img {
+            width: 90%;
+            /* border: 3px solid; */
+        }
+
+        .content-img img {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="SiteTitle">
+                <h1>My First HTML Page</h1>
+            </div>
+            <div class="logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqNFgJSqqRF3Kr3u434VdgeOoHmab8VWFjFg&usqp=CAU"
+                    alt="My image">
+            </div>
+        </div>
+        <div class="navigation">
+            <ul>
+                <li><a href="web1.html" target="_blank">Web1</a></li>
+                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="layout-1.html" target="_blank">Layout</a></li>
+                <li><a href="farm.html" target="_blank">Farm</a></li>
+            </ul>
+        </div>
+        <div class="sidebar">
+            <ul>
+                <li><a href="class-display.html" target="_blank">History</a></li>
+                <li><a href="farm.html" target="_blank">Geography</a></li>
+                <li><a href="web1.html" target="_blank">Economics</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum neque fugiat esse dicta voluptates quod,
+                saepe necessitatibus quaerat deserunt porro voluptatem pariatur reprehenderit ea ipsam veritatis
+                corrupti, aliquid nesciunt tempore!</p>
+            <div class="content-img"> <img
+                    src="https://i.pinimg.com/originals/78/cf/3e/78cf3eee0658dbf205e821f5a31db5e3.png " alt="My dog">
+            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum deserunt labore, architecto quae
+                pariatur atque inventore asperiores commodi et rerum perspiciatis quod omnis autem maiores magnam
+                corporis fugit, cum voluptate.</p>
+            <ul>
+                <li><a href="class-display.html" target="_blank">History</a></li>
+                <li><a href="farm.html" target="_blank">Geography</a></li>
+                <li><a href="web1.html" target="_blank">Economics</a></li>
+            </ul>
+        </div>
+        <div class="footer">
+            <p>&copy; Copyright 2022 All rights reserved</p>
+        </div>
+    </div>
+</body>
+
+</html>

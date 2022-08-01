@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Farming</title>
+    <style>
+        @media screen and (max-width:560px) {
+            .navigation {
+                flex-direction: column;
+            }
+
+            .content {
+                flex-direction: column;
+            }
+
+            .content>* {
+                flex: 1;
+            }
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            line-height: 1.5;
+            color: white;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .container {
+            border: solid;
+        }
+
+        .header {
+            padding: 2em 0;
+        }
+
+        .header h1 {
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: cursive;
+        }
+
+        .navigation {
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 2em 0;
+        }
+
+        .navigation li a {
+            display: block;
+            padding: 1em o;
+            text-transform: uppercase;
+            color: yellowgreen;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .navigation li {
+            flex: 1;
+        }
+
+        .navigation li a:hover {
+            background-color: palegreen;
+            color: black;
+        }
+
+        .content {
+            display: flex;
+        }
+
+        .left {
+            flex: 2.5;
+            padding-left: 1em;
+        }
+
+        .left li {
+            list-style: none;
+            border: solid rebeccapurple;
+        }
+
+        .left li a {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: cursive;
+            color: coral;
+            line-height: 2.5;
+            display: block;
+            text-align: center;
+        }
+
+        .para {
+            text-align: center;
+            padding-top: 1em;
+        }
+
+        .para p {
+            font-family: cursive;
+            line-height: 1.8;
+        }
+
+        .centre {
+            flex: 7.5;
+        }
+
+        .box {
+            width: 70%;
+            margin: auto;
+        }
+
+        .box h3 {
+            text-align: center;
+            text-transform: uppercase;
+            margin: 2em 0;
+        }
+
+        .box img {
+            width: 100%;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 2em 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Agri-Gallery</h1>
+        </div>
+        <ul class="navigation">
+            <li><a href="https://google.com">Google</a></li>
+            <li><a href="https://facebook.com">Facebook</a></li>
+            <li><a href="https://github.com">Github</a></li>
+            <li><a href="https://instagram.com">Instagram</a></li>
+            <li><a href="https://twitter.com">Twitter</a></li>
+        </ul>
+        <div class="content">
+            <div class="left">
+                <li><a href="https://en.wikipedia.org/wiki/Beekeeping">Bee-Keeping</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Vermicompost"> Vermicompost</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Mushroom">Mushroom</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Plant_nursery">Plant-Nursery</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Food_processing">Food Processing</a></li>
+                <div class="para">
+                    <p>"There are two spiritual dangers in not owning a farm. One is the danger of supposing that
+                        breakfast comes from the grocery, and the other that heat comes from the furnace.</p>
+                    <hr>
+                    <p>"My grandfather used to say that once in your life you need a doctor, a lawyer, a policeman, and
+                        a preacher. But every day, three times a day, you need a farmer."
+                    </p>
+                    <hr>
+                    <p>"It is only the farmer who faithfully plants seeds in the Spring, who reaps a harvest in the
+                        Autumn."</p>
+                    <hr>
+                    <p>"When tillage begins, other arts follow. The farmers, therefore, are the founders of human
+                        civilization."</p>
+                    <hr>
+                    <p>"Agriculture is our wisest pursuit, because it will in the end contribute most to real wealth,
+                        good morals & happiness."</p>
+                    <hr>
+                    <p>"The farmer is the only man in our economy who buys everything at retail, sells everything at
+                        wholesale, and pays the freight both ways."</p>
+                    <hr>
+                    <p>"The ultimate goal of farming is not the growing of crops, but the cultivation and perfection of
+                        human beings."</p>
+                    <hr>
+                    <p>"We have neglected the truth that a good farmer is a craftsman of the highest order, a kind of
+                        artist."</p>
+                    <hr>
+                    <p>"Those too lazy to plow in the right season will have no food at the harvest."
+                    </p>
+                    <hr>
+                </div>
+            </div>
+            <div class="centre">
+                <div class="box">
+                    <h3>Mushroom</h3>
+                    <img src="https://pngimg.com/uploads/mushroom/mushroom_PNG3206.png" alt="mushroom">
+                </div>
+                <div class="box">
+                    <h3>Bee-Keeping</h3>
+                    <img src="https://www.oxfam.org.au/wp-content/uploads/2017/01/beekeeping-PNG.jpg" alt="Bee-Keeping">
+                </div>
+                <div class="box">
+                    <h3>Vermicompost</h3>
+                    <img src="https://e7.pngegg.com/pngimages/402/231/png-clipart-vermicompost-plant-european-union-plant-hand-business.png"
+                        alt="Vermicompost">
+                </div>
+                <div class="box">
+                    <h3>Food Processing</h3>
+                    <img src="https://w7.pngwing.com/pngs/209/466/png-transparent-food-processing-good-manufacturing-practice-technology-factory-food-processing-miscellaneous-food-investment.png"
+                        alt=" Food Processing">
+                </div>
+            </div>
+
+        </div>
+        <div class="footer">
+            <p>&copy;Copyright 2022 All rights reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>

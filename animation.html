@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation-CSS</title>
+    <style>
+        @keyframes my-animation{
+            5% {
+                border-color:greenyellow ;
+            }
+            10% {
+                width:400px;
+                height:400px;
+            } 
+            90%{
+                background-color: black;
+            }
+            100%{
+                border-color: blue;
+            }
+        }
+        .container{
+            height: 200px;
+            width: 200px;
+            border: solid 4px red;
+            animation-name: my-animation;
+            animation-duration:6s;
+            animation-timing-function:ease-in-out;
+            animation-delay: 2s;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-fill-mode: backwards;
+            
+            animation: my-animation 6s ease-in-out 2s infinite normal;
+        }
+        .container img{
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://www.pngall.com/wp-content/uploads/1/Lord-Shiva-PNG-Image.png" alt="abc">
+    </div>
+</body>
+</html>

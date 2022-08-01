@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Web- Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+         background-color: brown;
+         color: black;
+
+        }
+
+        .container {
+            display: grid;
+            height: 100vh;
+            text-align: center;
+            /* grid-template-areas: 
+            "logo sitetitle sitetitle sitetitle sitetitle sitetitle"
+            "nav nav nav nav nav nav"
+            "asideleft maincontent maincontent maincontent maincontent maincontent"
+            "footer footer footer footer footer footer"
+            ; */
+            grid-template-columns: repeat(12,1fr);
+        }
+        .logo {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row: 1;
+          height: 140px;   
+            
+        }
+        .logo img{
+            height: 100%;
+            width: 100%;
+
+        }
+        .site-title {
+            grid-column-start: 3;
+            grid-column-end: 13;
+            grid-row: 1;
+            height: 140px;
+        }
+        .site-title h1{
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: cursive;
+        }
+        .nav{
+            grid-column-start: 1;
+            grid-column-end: 13;
+            grid-row: 2;
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 2em 0;
+        }
+        .nav li{
+            flex: 1;
+        }
+        .nav li a{
+            display: block;
+            padding: 1em o;
+            text-transform: uppercase;
+            color: yellowgreen;
+            text-align: center;
+            text-decoration: none;
+        }
+        .nav li a:hover{
+            background-color: black;
+            color: white;
+        }
+        .aside-left {
+           grid-column: 1/3;
+           grid-row: 3;
+           height: 100vh;
+           border-right:3px solid ;
+        }
+        .main-content {
+           grid-column:3/13;
+           grid-row: 3;
+           height: 100vh;
+        }
+
+        .footer {
+            grid-column: 1/13;
+            grid-row: 4;
+            height: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://www.freepnglogos.com/uploads/lord-shiva-png/lord-shiva-temple-westville-durban-shivloka-27.png" alt="Shiva">
+        </div>
+        <div class="site-title">
+            <h1>Mahadev Ke Bhakt</h1>
+            <span style="font-size:300% ;">(TUNNI)</span>
+        </div>
+        <ul class="nav">
+            <li><a href="#">BRAHMAH</a></li>
+            <li><a href="#">VISHNU</a></li>
+            <li><a href="#">MAHESH</a></li>
+            <li><a href="#">KRISHNA</a></li>
+            <li><a href="#">RAM</a></li>
+        </ul>
+        <div class="aside-left">
+            <p>"जिसने मन को जीत लिया है, उसने पहले ही परमात्मा को प्राप्त कर लिया है, क्योंकि उसने शान्ति प्राप्त कर ली है। ऐसे मनुष्य के लिए सुख-दुख, सर्दी-गर्मी और मान-अपमान एक से है।"</p>
+            <hr>
+            <p>
+                "मैं हर जीव के ह्रदय में परमात्मा स्वरुप स्थित हूँ। जैसे ही कोई किसी देवता की पूजा करने की इच्छा करता है, मैं उसकी श्रद्धा को स्थिर करता हूँ, जिससे वह उसी विशेष देवता की भक्ति कर सके।"
+            </p>
+        </div>
+        <div class="main-content"></div>
+        <div class="footer"></div>
+    </div>
+</body>
+
+</html>

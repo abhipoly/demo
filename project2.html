@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A HTML Page(Flex-Box)</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            border: solid;
+            /* display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center; */
+        }
+        .header{
+            height: 50px;
+            display: block;
+        }
+        .Sitetitle > h2{
+            text-align: center;
+            text-transform: uppercase;
+            font-family: cursive;
+        }
+        .navigation{
+            height: 50px;
+        }
+        .navigation ul{
+            list-style: none;
+        }
+        .navigation ul li{
+            width: 20%;
+            float: left;
+        }
+        .navigation ul li a{
+            border: 1px red solid;
+            text-decoration: none;
+            font-family: cursive;
+            padding: 1em 1em;
+            display: flex;
+            flex-direction: row;
+            justify-content:center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="Sitetitle">
+            <h2>Fruits Gallery</h2>
+            </div>
+        </div>
+        <div class="navigation">
+            <ul class="List">
+                    <li><a href="project1.html">Project</a></li>
+                    <li><a href="anchor.html">Anchor</a></li>
+                    <li><a href="new-layout.html">New-layout</a></li>
+                    <li><a href="farm.html">Farm</a></li>
+                    <li><a href="web2.html">Web2</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="right">
+                <li>Mango</li>
+                <li>Litchi</li>
+                <li>Orange</li>
+                <li>Grapes</li>
+                <li>Guava</li>
+            </div>
+            <div class="left">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati corporis iusto, reprehenderit in nihil, eos ab aspernatur quae modi quod aut distinctio dicta architecto deserunt, aliquam odio eum deleniti possimus.</p>
+            </div>
+            <div class="centre">
+                <img src="https://www.pngall.com/wp-content/uploads/2016/06/Guava-Download-PNG.png" alt="Guava">
+                <p>“Fruits were my candy as a little girl growing up in Barbados.
+                 I was surrounded by a variety of fruit trees: Tamarind, cherry, mango, dunks, papaya, guava, pear, sugar apple, golden apple, and gooseberry trees.”</p>
+                 <img src="http://assets.stickpng.com/images/5a5f615dee40df432bfac53b.png" alt="Litchi">
+                 <p>“But the fruit of the Spirit is love, joy, peace, forbearance, kindness, goodness, faithfulness.”</p>
+                 <img src="https://www.pngitem.com/pimgs/m/112-1122269_mango-png-free-download-mango-png-transparent-png.png" alt="Mango">
+                 <p>“Knowledge is knowing a tomato is a fruit; wisdom is not putting it in a fruit salad.” </p>
+                 <img src="https://pngimg.com/uploads/orange/orange_PNG791.png" alt="Orange">
+                 <p>“Fruit… its just God showing off… Look at all the colors I know!”</p>
+                 <img src="https://www.pngmart.com/files/1/Green-Grapes-PNG.png" alt="Grapes">
+                 <p>“Every time you eat a fruit for the first time that year you need to make a wish.”</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

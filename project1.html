@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Project </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @media screen and (max-width:580px) {
+            body {
+                background-color: beige;
+            }
+            p{
+                color: red;
+                /* border: 3px solid black; */
+            }
+        }
+
+        @media screen and (min-width:800px) {
+            body {
+                background-color: lightpink;
+            }
+            p{
+                color:green;
+                /* border: 3px solid black; */
+            }
+        }
+
+        @media screen and (min-width:1250px) {
+            body {
+                background-color: lightgreen;
+            }
+
+            p{
+                color: goldenrod;
+                /* border: 3px solid black; */
+            }
+        }
+
+        .header {
+            padding: 1em;
+            text-align: center;
+        }
+
+        .content {
+            height: auto;
+        }
+
+        .left {
+            float: left;
+            width: 50%;
+            height: 100vh;
+            padding: 2em 2em;
+            text-align: center;
+        }
+
+        .left img {
+            width: 100%;
+            height: auto;
+
+        }
+
+        .right {
+            float: right;
+            width: 50%;
+            height: 100vh;
+            padding: 2em 2em;
+            text-align: center;
+        }
+
+        .right img {
+            width: 100%;
+            height: auto;
+
+        }
+        .text{
+            padding-top: 10em;
+            /* border: solid; */
+        }
+        .footer{
+            clear: both;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 style="text-transform: uppercase;">Currency Page</h1>
+        </div>
+        <div class="content">
+            <div class="left text">
+                <h2>Dollar</h2>
+                <p>“Lesson: In the real world, ninety-nine cents will not get you into New York City. You will need the
+                    full dollar.”</p>
+                <p style="padding:2em">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae asperiores
+                    nulla nostrum cumque omnis veniam, enim obcaecati qui eveniet ad impedit eligendi excepturi illum
+                    est unde repellat consequuntur placeat exercitationem.</p>
+                
+            </div>
+            <div class="right">
+                <img src="https://www.transparentpng.com/thumb/dollar/dollar-free-download-transparent-15.png"
+                    alt="Dollar">
+            </div>
+
+            <div class="left">
+                <img src="https://www.pngmart.com/files/15/Euro-Transparent-Background.png" alt="Euro">
+            </div>
+
+            <div class="right text">
+                <h2>Euro</h2>
+                <p>"We must stress that the euro has been beneficial to the European Union because, otherwise, in this
+                    context of international turmoil, every country would have to devalue their currencies."</p>
+                <p style="padding: 2em;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis et
+                    voluptates perferendis? Repellendus quibusdam fuga suscipit nobis, assumenda vitae molestiae
+                    obcaecati nemo. Accusamus, temporibus animi. Qui harum accusamus suscipit consequatur!</p>
+            </div>
+            
+            <div class="left text">
+                <h2>Pound</h2>
+                <p>"A pound invested in energy efficiency buys seven times more energy solution than a pound invested in
+                    nuclear power."</p>
+            </div>
+
+            <div class="right">
+                <img src="https://www.pngkey.com/png/full/1-14560_currency-notes-in-png-pound-notes-png.png"
+                    alt="Pound">
+            </div>
+           
+           <div class="footer">
+                <p>&copy;Copyright 2022 All rights reserved.</p>
+            </div>
+        </div>
+</body>
+
+</html>

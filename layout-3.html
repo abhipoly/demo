@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page Layout</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0;
+        }
+        .container{
+            padding: 0.3em;
+            background-color: black;
+        }
+        .message{
+            height: calc(50px - 0.6em);
+            background-color: rgb(41, 37, 37);
+            margin: 0.3em;
+            border-radius: 13px;
+        }
+        .screen{
+            height:500px;
+            width: calc(80% - 0.6em);
+            float: left;
+            background-color: rgb(41, 37, 37);
+            margin:0.3em;
+        }
+        .callers{
+            width: calc(20% - 00.6em);
+            height: 500px;
+            float: left;
+            background-color: rgb(17, 15, 15);
+            margin: 0.3em;
+        }
+        .callers > div{
+            margin: 0.3em;
+            width: calc(100% - 00.6em);
+            height: 23.6%;
+            background-color: rgb(41, 37, 37);
+            border-radius: 10px;
+        }
+        .status-bar{
+            height: 150px;
+            background-color: rgb(41, 37, 37);
+            clear: both;
+        }
+        .callers .active img{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="message"></div>
+        <div class="screen"></div>
+        <div class="callers">
+            <div></div>
+            <div></div>
+            <div class="active" style="border: 5px solid dodgerblue;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_India.png" alt="Flag_of_India">
+            </div>
+            <div></div>
+        </div>
+        <div class="status-bar"></div>
+    </div>
+</body>
+</html>
